@@ -1,0 +1,19 @@
+/* Responsive legal pages using UnitSpring's approved blue, lavender and mint palette. */
+:root { color-scheme:light dark; --paper:#fdfeff; --surface:#fff; --ink:#071637; --muted:#52627e; --blue:#176bf3; --border:#dde5f1; }
+* { box-sizing:border-box; }
+body { margin:0; color:var(--ink); background:radial-gradient(ellipse at top left,#e7f2ff,transparent 65%),radial-gradient(ellipse at top right,#f3e7ff,transparent 65%),var(--paper); font:1rem/1.75 system-ui,-apple-system,sans-serif; }
+header,main,footer { width:min(100% - 2rem,52rem); margin:auto; }
+header { padding:3rem 0 1.5rem; }
+.brand { font-size:1.25rem; font-weight:750; letter-spacing:-.03em; color:var(--blue); }
+h1 { margin:.5rem 0; font-size:clamp(2rem,6vw,3rem); line-height:1.2; letter-spacing:-.04em; }
+h2 { font-size:1.3rem; line-height:1.4; margin-top:2rem; }
+p,li { overflow-wrap:anywhere; }
+.date,footer { color:var(--muted); }
+main { padding:1.5rem clamp(1rem,4vw,2.5rem) 2.5rem; background:var(--surface); border:1px solid var(--border); border-radius:1.5rem; }
+.summary { border-left:4px solid var(--blue); padding:.8rem 1rem; background:#e7f2ff; border-radius:0 .7rem .7rem 0; }
+a { color:var(--blue); text-underline-offset:.2em; }
+a:focus-visible { outline:3px solid var(--blue); outline-offset:4px; }
+nav { display:flex; flex-wrap:wrap; gap:1rem; }
+footer { padding:1.5rem 0 3rem; font-size:.9rem; }
+@media(prefers-color-scheme:dark) { :root { --paper:#0d1320; --surface:#172132; --ink:#f6f8fc; --muted:#b2bed2; --blue:#8ab8ff; --border:#334359; } body { background:radial-gradient(ellipse at top left,#1a395c,transparent 70%),var(--paper); } .summary { background:#213e69; } }
+@media(min-width:42rem) { header { padding-top:4rem; } }
